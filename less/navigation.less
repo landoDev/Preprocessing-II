@@ -1,1 +1,21 @@
 // Navigation Styles here
+.navBar {
+    .displayFlex(space-between, center);
+    padding:1%;
+    border-bottom: .15rem dashed @navigation-border;
+    #title{
+        margin-left: 16%;
+    }
+    .links {
+        margin-right: 18%;
+        width: 30%;
+        .anchors{
+            .displayFlex(space-evenly, center);
+            a {
+                color: @shark;
+                text-decoration-line: none;
+            }
+        }
+    }
+
+}
