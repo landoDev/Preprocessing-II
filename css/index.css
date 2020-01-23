@@ -175,12 +175,36 @@ img {
   padding: 1%;
   border-bottom: 0.15rem dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .navBar #title {
   margin-left: 16%;
+}
+@media (max-width: 500px) {
+  .navBar #title {
+    margin: 0;
+    padding: 2%;
+  }
+  .navBar #title h1 {
+    font-size: 3rem;
+  }
 }
 .navBar .links {
   margin-right: 18%;
   width: 30%;
+}
+@media (max-width: 500px) {
+  .navBar .links {
+    margin: 0;
+    width: 100%;
+    padding: 2% 0;
+  }
 }
 .navBar .links .anchors {
   display: flex;
