@@ -384,3 +384,6 @@ img {
     padding: 2% 0;
   }
 }
+.home .content-pick .destination .btn button:hover {
+  background-color: #117a8b;
+}
