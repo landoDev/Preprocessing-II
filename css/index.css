@@ -212,9 +212,21 @@ img {
   align-items: center;
 }
 .navBar .links .anchors a {
+  animation-name: anchor;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
   color: #212529;
   text-decoration-line: none;
   font-size: 2rem;
+}
+@keyframes anchor {
+  from {
+    margin-top: 10%;
+  }
+  to {
+    margin-top: 20%;
+  }
 }
 .footer {
   width: 100%;

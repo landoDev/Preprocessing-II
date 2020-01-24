@@ -28,9 +28,18 @@
         .anchors{
             .displayFlex(space-evenly, center);
             a {
+                .animation(anchor, 2s, 2, alternate);
                 color: @shark;
                 text-decoration-line: none;
                 font-size: 2rem;
+            }
+            @keyframes anchor{
+                from {
+                    margin-top: 10%;
+                }
+                to {
+                    margin-top: 20%;
+                }
             }
         }
     }
