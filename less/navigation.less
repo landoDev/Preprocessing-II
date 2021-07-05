@@ -1,1 +1,48 @@
 // Navigation Styles here
+.navBar {
+    @media @mobile {
+        .displayFlexColumn(space-evenly, center)
+    }
+    .displayFlex(space-between, center);
+    padding:1%;
+    border-bottom: .15rem dashed @navigation-border;
+   
+    #title{
+        @media @mobile{
+            margin: 0;
+            padding: 2%;
+            h1{
+                font-size: 3rem;
+            }
+        }
+        margin-left: 16%;
+    }
+    .links {
+        @media @mobile {
+            margin: 0;
+            width: 100%;
+            padding: 2% 0;
+        }
+        margin-right: 18%;
+        width: 30%;
+        .anchors{
+            .displayFlex(space-evenly, center);
+            a {
+                .animation(anchor, 2s, 2, alternate);
+                color: @shark;
+                text-decoration-line: none;
+                font-size: 2rem;
+            }
+            @keyframes anchor{
+                from {
+                    margin-top: 10%;
+                }
+                to {
+                    margin-top: 20%;
+                }
+            }
+        }
+    }
+
+
+}

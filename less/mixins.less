@@ -1,1 +1,28 @@
 // Mixins in here
+.displayFlex (@justify, @alignment){
+    display: flex;
+    justify-content: @justify;
+    align-items: @alignment;
+}
+.displayFlexColumn (@justify, @alignment){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: @alignment;
+}
+.createBtn(@width, @b-radius, @font-color){
+    width: @width;
+    padding: 5%;
+    background-color: @button-bg;
+    border-radius: @b-radius;
+    color: @font-color;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.animation(@animation-name, @duration, @iteration, @direction){
+    animation-name: @animation-name;
+    animation-duration: @duration;
+    animation-iteration-count: @iteration;
+    animation-direction: @direction;
+}
